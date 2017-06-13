@@ -1,0 +1,20 @@
+<form class="gen-form" (ngSubmit)="signin()">
+    <div>
+        <fieldset>
+        <label>Username:</label>
+        <input type="text" [(ngModel)]="credentials.username" name="username">
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+        <label>Password:</label>
+        <input type="password" [(ngModel)]="credentials.password" name="password">
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+        <input type="submit" value="Sign In">
+        </fieldset>
+    </div>
+    <span>{{errorMessage}}</span>
+</form>

@@ -1,0 +1,95 @@
+div.signup-twitter{margin:20px 0;padding:20px 0;text-align:center;color:#999;border-top:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0}
+div.signup-twitter a{margin-right:15px}
+div.edit-form{float:right;width:440px;margin-bottom:25px}
+
+a.auth-twitter,.auth-twitter{d
+	isplay:block;
+	float:left;
+	position:relative;
+	margin:0 10px 10px 0;padding:10px 14px 10px 39px;
+	font-size:16px;
+	font-weight:normal;
+	text-decoration:none;
+	color:rgba(255,255,255,0.9);
+	border:none;
+	background:url(/assets/twitter.png) no-repeat 12px 50%;
+	background-color:#1d88b4;
+	border-radius:4px;
+	-webkit-transition:all 0.2s ease;
+	-moz-transition:all 0.2s ease;
+	-o-transition:all 0.2s ease;
+	transition:all 0.2s ease
+}
+
+.auth-google{
+	display:block;
+	float:left;
+	position:relative;
+	margin:0 10px 10px 0;padding:10px 14px 10px 39px;
+	font-size:16px;
+	font-weight:normal;
+	text-decoration:none;
+	color:rgba(255,255,255,0.9);
+	border:none;
+	background:url(/assets/google.png) no-repeat 12px 50%;
+	background-size: 16px 16px;
+	background-color:#1d88b4;
+	border-radius:4px;
+	-webkit-transition:all 0.2s ease;
+	-moz-transition:all 0.2s ease;
+	-o-transition:all 0.2s ease;
+	transition:all 0.2s ease
+}
+
+.auth-facebook{
+	display:block;
+	float:left;
+	position:relative;
+	margin:0 10px 10px 0;padding:10px 14px 10px 39px;
+	font-size:16px;
+	font-weight:normal;
+	text-decoration:none;
+	color:rgba(255,255,255,0.9);
+	border:none;
+	background:url(/assets/facebook.png) no-repeat 12px 50%;
+	background-size: 16px 16px;
+	background-color:#1d88b4;
+	border-radius:4px;
+	-webkit-transition:all 0.2s ease;
+	-moz-transition:all 0.2s ease;
+	-o-transition:all 0.2s ease;
+	transition:all 0.2s ease
+}
+
+a.auth-twitter:hover,
+.auth-twitter:hover{color:#fff;background-color:#197ea7}
+a.auth-twitter:active,
+.auth-twitter:active{background-color:#15739a}
+
+
+a.auth-top{display:inline-block;float:none;margin:0}
+
+
+
+form.gen-form{margin:20px 0 0 0;width:50%}
+form.gen-form{margin-top:10px}
+form.gen-form fieldset{margin:0;padding:8px 0;position:relative}
+
+
+form.gen-form fieldset input[type=text],
+form.gen-form fieldset input[type=password],
+form.gen-form fieldset input[type=email],
+form.gen-form fieldset textarea{width:100%;padding:10px 12px;font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;color:#333;border:none;background:rgba(0,0,0,0.07);border-radius:6px;box-shadow:inset 0 1px 2px rgba(0,0,0,0.12);box-sizing:border-box}
+form.gen-form fieldset input[type=text]:focus,
+form.gen-form fieldset input[type=password]:focus,
+form.gen-form fieldset input[type=email]:focus,
+form.gen-form fieldset textarea:focus{background:#fff;outline-width:0}
+
+form.gen-form fieldset input[type=text],
+form.gen-form fieldset input[type=password],
+form.gen-form fieldset input[type=email]{font-size:16px;background:rgba(0,0,0,0.07);vertical-align:middle}
+form.gen-form fieldset input[type=checkbox]{margin:0 4px 0 0}
+form.gen-form fieldset textarea{height:200px;font-size:14px;line-height:1.5;display:block}
+
+
+

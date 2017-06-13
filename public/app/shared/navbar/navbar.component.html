@@ -1,0 +1,36 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" routerLink="/">KK Web</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a routerLink="/">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Statistics <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a [routerLink]="['/articles']">Articles</a></li>
+            <li *ngIf="this._authenticationService.isLoggedIn()"><a [routerLink]="['/articles/create']">New</a></li>
+          </ul>
+        </li>
+        <li><a [routerLink]="['/about']"> About</a></li> 
+        <!-- 
+        routerLink="/about" also works, changing part of the whole page. 
+        href="/about will refresh the whole page
+        -->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li *ngIf="!this._authenticationService.isLoggedIn()"><a [routerLink]="['/authentication/signup']"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li *ngIf="!this._authenticationService.isLoggedIn()"><a [routerLink]="['/authentication/signin']"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li *ngIf="this._authenticationService.isLoggedIn()"><a><span class="glyphicon "></span> Hello {{this._authenticationService.user.firstName}} </a></li>
+        <li *ngIf="this._authenticationService.isLoggedIn()"><a routerLink="/profile"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+        <li *ngIf="this._authenticationService.isLoggedIn()"><a href="/api/auth/signout"><span class="glyphicon glyphicon-log-in"></span> Signout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,44 @@
+<div *ngIf="user">
+	<a>Hello {{user.firstName}}</a>
+	<a href="/api/auth/signout">Signout</a>
+
+	
+	<ul>
+		<li><a [routerLink]="['/articles']">List Articles</a></li>
+		<li><a [routerLink]="['/articles/create']">Create Article</a></li>
+	</ul>
+
+	<form (ngSubmit)="updateUser()">
+    <div>
+        <label>First Name:</label>
+        <input type="text" [(ngModel)]="user.firstName" name="firstName">
+    </div>
+    <div>
+        <label>Last Name:</label>
+        <input type="text" [(ngModel)]="user.lastName" name="lastName">
+    </div>
+    <div>
+        <label>Email:</label>
+        <input type="text" [(ngModel)]="user.email" name="email">
+    </div>
+    <div>
+        <label>Username:</label>
+        <input type="text" [(ngModel)]="user.username" name="username">
+    </div>
+    <div>
+        <label>Password:</label>
+        <input type="password" [(ngModel)]="user.password" name="password">
+    </div>
+    
+    <div>
+        <input type="submit" value="Update" />
+    </div>
+    <span>{{errorMessage}}</span>
+	</form>
+
+</div>
+
+<div *ngIf="!user">
+	<a [routerLink]="['/authentication/signup']">Signup-home profile </a>
+	<a [routerLink]="['/authentication/signin']">Signin-home profile</a>
+</div>
