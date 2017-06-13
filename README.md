@@ -1,6 +1,6 @@
 # MEAN-Stack-Angular-Demo
 
-make MEAN Stack with MongoDB, ExpressJS, Angular, and Node.js,
+make MEAN Stack with MongoDB, ExpressJS, Angular, and Node.js
 
 first install moules using npm install in command line
 
