@@ -2,7 +2,7 @@
 
 make MEAN Stack with MongoDB, ExpressJS, Angular, and Node.js
 
-first install moules using npm install in command line
+first install modules using npm install in command line
 
 install mongodb or change db configuration in config/en/development.js 
 change db: 'mongodb://localhost:27017/geek-db' as  db: 'mongodb://username:password@your-mongodb-server:your-mongodb-port/geek-db'
