@@ -10,3 +10,6 @@ change db: 'mongodb://localhost:27017/geek-db' as  db: 'mongodb://username:passw
 how to run: npm start
 
 visit: http://localhost:3000
+
+
+note: in the public/app foulder, all *.js *.js.map files are automatically generated.
